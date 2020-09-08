@@ -2,5 +2,8 @@
 language: go
 go: 1.4.2
 
+addons:
+  - apt:
+      - make
 script:
- - go test -v ./...
+- make
